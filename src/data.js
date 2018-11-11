@@ -21,7 +21,7 @@ const data = [
     id: 3,
     body:
       "AND THERE IS A GOAL! No mistake from Kane, as he gets back up off the turf to cushion in Trippier's pinpoint cutback",
-    time: moment().format('mm') - 15
+    time: moment().format('mm') - 5
   }
 ];
 
