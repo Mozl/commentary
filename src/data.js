@@ -1,33 +1,27 @@
 import moment from 'moment';
 
-let time1 =
-  moment()
-    .startOf('hour')
-    .fromNow() + 3;
-
-console.log(time1);
-console.log(moment().format('mm ss'));
-
 const data = [
   {
     id: 0,
-    body: 'ndsjfsdkjfbkjdsfb',
+    body:
+      'Ronaldo has been injured! The England team picked him up and threw him into their goal',
     time: moment().format('mm')
   },
   {
     id: 1,
-    body: 'sdfkhksdjfhf',
+    body: 'Kane just hammered a wild shot from range well off target',
     time: moment().format('mm') - 1
   },
   {
     id: 2,
-    body: 'fhdskhfsdfhjsdhfjksdhfjsfadk',
+    body: 'Now Alli gets a booking',
     time: moment().format('mm') - 2
   },
   {
     id: 3,
-    body: 'fjsdfsdkfsdaklfhsdkajfhsdfldsfhiuwreirr',
-    time: moment().format('mm') - 3
+    body:
+      "AND THERE IS A GOAL! No mistake from Kane, as he gets back up off the turf to cushion in Trippier's pinpoint cutback",
+    time: moment().format('mm') - 15
   }
 ];
 
