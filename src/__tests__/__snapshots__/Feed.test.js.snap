@@ -14,7 +14,7 @@ exports[`renders correctly 1`] = `
       <span
         className="sc-bwzfXH deziww"
       >
-        22
+        49
       </span>
       <div
         className="sc-htpNat cixthU"
@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
       <span
         className="sc-bwzfXH deziww"
       >
-        21
+        48
       </span>
       <div
         className="sc-htpNat cixthU"
@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
       <span
         className="sc-bwzfXH deziww"
       >
-        20
+        47
       </span>
       <div
         className="sc-htpNat cixthU"
@@ -62,7 +62,7 @@ exports[`renders correctly 1`] = `
       <span
         className="sc-bwzfXH deziww"
       >
-        17
+        44
       </span>
       <div
         className="sc-htpNat cixthU"

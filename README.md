@@ -1,44 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# commentary
 
-## Available Scripts
+A React SPA project for showing a sports commentary.
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+- Git clone the repo to download the project files and cd to commentary folder.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- In the terminal run: `npm install` to install all the dependencies for the project.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Run `npm start` to get the app started.
 
-### `npm test`
+- Head to http://localhost:3000/ in the browser to see it.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Testing
 
-### `npm run build`
+Run `npm run test` to run the test suites and type `u` to update the snapshot tests.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I have written a few basic tests using Jest and Enzyme. I have used a mix of unit and snapshot tests for each component. As the interface relies on changing times the Feed snapshot fails if it's not up to date. I have also generated a coverage report. You can generate one to look at in the CLI using `npm test -- --coverage`.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## My approach
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I started out by setting up a simple create-react-app project as I wanted to jump into development quickly. I then took some time to think about the structure of the app components and started building the Feed. I used styled-components for styling as it maintains componentisation. The commentary involves iterating over the comments in the data.js file and displaying them in a list. For the time I used moment.js. As I am mocking a sporting event which starts at a specific time, I am using the current hour as the start point and simulating the various times comments have been created, which are hardcoded. If I had more time on this I would set up the app so it would get the time of the comment creation and use that to display the minutes. There would also be a consideration of responsiveness and additional styling, such as adding the verticle lines between the minutes values.
