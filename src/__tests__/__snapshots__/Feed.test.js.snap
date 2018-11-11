@@ -2,6 +2,27 @@
 
 exports[`renders correctly 1`] = `
 <ul
-  className="sc-bdVaJa kZAgjJ"
-/>
+  className="sc-bdVaJa kiuZdy"
+>
+  <li>
+    ndsjfsdkjfbkjdsfb
+     - 
+    0
+  </li>
+  <li>
+    sdfkhksdjfhf
+     - 
+    1
+  </li>
+  <li>
+    fhdskhfsdfhjsdhfjksdhfjsfadk
+     - 
+    2
+  </li>
+  <li>
+    fjsdfsdkfsdaklfhsdkajfhsdfldsfhiuwreirr
+     - 
+    3
+  </li>
+</ul>
 `;

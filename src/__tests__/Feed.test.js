@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Feed from '../components/Feed';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
 it('renders without crashing', () => {
@@ -13,4 +13,9 @@ it('renders without crashing', () => {
 it('renders correctly', () => {
   const tree = renderer.create(<Feed />);
   expect(tree).toMatchSnapshot();
+});
+
+it('renders the list of comments', () => {
+  const wrapper = mount(<Feed />);
+  expect(wrapper.find('li').length).toEqual(4);
 });
